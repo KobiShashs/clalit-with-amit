@@ -1,38 +1,38 @@
 .App {
-  text-align: center;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    /* grid-template-rows: 10% 20% 70%; */
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App>.Header {
+    background-color: var(--background-color);
+    grid-column: 12 span;
+    grid-row: 1 span;
+    border: 1px solid var(--primary-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App>.Menu {
+    background-color: var(--background-color);
+    grid-column: 2 span;
+    grid-row: 10 span;
+    border: 1px solid var(--primary-color);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App>.Main {
+    background-color: var(--background-color);
+    grid-column: 10 span;
+    grid-row: 10 span;
+    border: 1px solid var(--primary-color);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App>.Footer {
+    background-color: var(--background-color);
+    grid-column: 12 span;
+    grid-row: 1 span;
+    border: 1px solid var(--primary-color);
 }

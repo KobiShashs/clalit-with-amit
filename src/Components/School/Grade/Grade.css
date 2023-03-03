@@ -1,0 +1,51 @@
+.Grade {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.evil {
+    font-weight: 900;
+    color: red;
+}
+
+.Grade p {
+    color: var(--primary-color);
+}
+
+.Grade .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Grade .excellent {
+    font-size: 22px;
+    margin: 5px;
+    color: green;
+}
+
+.Grade .good {
+    font-size: 22px;
+    margin: 5px;
+    color: orange;
+}
+
+.Grade .ok {
+    font-size: 22px;
+    margin: 5px;
+    color: orangered;
+}
+
+.Grade .bad {
+    font-size: 22px;
+    margin: 5px;
+    color: red;
+}

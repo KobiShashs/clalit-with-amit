@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #6db33f;
+    --background-color: #ffffff;
+}
+.light{
+    --primary-color: #000000;
+    --secondary-color: #6db33f;
+    --background-color: #ffffff;
 }
 
-code {
+.dark{
+    --primary-color: #ffffff;
+    --secondary-color: #6db33f;
+    --background-color: #000000;
+}
+
+body {
+    margin: 0;
+    font-family: 'PT Sans';
+    font-size: 10px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+
+
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
